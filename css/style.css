@@ -1,0 +1,109 @@
+body {
+    font-family: 'Times New Roman';
+    background-color: #caf0f0;
+    margin: 25px;
+}
+
+h1 {
+    font-family: 'Space Mono', monospace;
+    font-size: 30px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 15px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+p {
+    font-size: 20px;
+}
+
+.current {
+    color: #0000ff;
+    background-color: #ffffff;
+    text-transform: uppercase;
+}
+
+.current a {
+    color: #0000ff;
+}
+
+nav ul li{
+    display: inline-block;
+    background-color: rgb(134, 179, 230);
+	padding: 10px;
+	width: 15%;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 22px;
+    text-align: center;
+}
+
+nav ul li a {
+    font-family: 'Times New Roman';
+    color: black;
+}
+
+ul li {
+    text-align: center;
+}
+
+
+img:hover {
+    border: 5px solid blueviolet;
+    border-radius: 15px;
+}
+
+section{
+    text-align: center;
+}
+
+.model-gallery{
+    display: grid;
+    grid-template-columns: auto;
+    justify-items: center;
+}
+
+.song-gallery{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+footer {
+    text-align: center;
+}
+
+.main-pic{
+    display: flex;
+    justify-content: center;
+    width: auto;
+    margin: auto;
+    padding: 10px;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.main-pic:hover{
+    cursor: default;
+    transform: rotate(180deg);
+    transition: all 0.3s ease-in-out 0s;
+    border: none;
+}
+
+@media (prefers-reduced-motion) {
+    .main-pic:hover {
+        transform: dissolve;
+    }
+}
+
+.form{
+    background-image: url(../images/bakarclose.jfif);
+    background-color: #caf0f0;
+}
+
+.playlist{
+    text-align: center;
+}
